@@ -20,7 +20,7 @@ struct SwitchStoryView: View {
                     //TODO: Header for what must user choose
                     //Header Text
                     Text("Choose your path")
-                        .font(.system(size: geometry.size.width * 0.05))
+                        .font(.system(size: geometry.size.width * 0.05, design: .rounded))
                         .fontWeight(.medium)
                         .foregroundColor(.white)
                     

@@ -14,9 +14,6 @@ struct CustomActionButton: View {
     var widthImage: Double
     var heightImage: Double
     
-    //TODO: Make subtitle in card and add function change a screen
-    //    var action: () -> Void // Void function parameter
-    
     var body: some View{
         ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)){
             ZStack{
@@ -37,7 +34,7 @@ struct CustomActionButton: View {
             
             VStack(alignment: .leading){
                 Text(title)
-                    .font(.system(size: widthImage / 12))
+                    .font(.system(size: widthImage / 12, design: .rounded))
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
                     .frame(width: widthImage / 1.2, height: heightImage / 3, alignment: .leading)
@@ -47,7 +44,7 @@ struct CustomActionButton: View {
                     .padding(.bottom, 80)
                 Spacer()
                 Text(subtitle)
-                    .font(.system(size: widthImage / 18))
+                    .font(.system(size: widthImage / 18, design: .rounded))
                     .fontWeight(.light)
                     .foregroundColor(.white)
                     .fixedSize(horizontal: false, vertical: true)

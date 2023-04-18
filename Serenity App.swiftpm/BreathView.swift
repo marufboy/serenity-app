@@ -54,7 +54,7 @@ struct BreathView: View {
             
             VStack {
                 Text("4-7-8 Breathing Exercise")
-                    .font(.system(size: geometry.size.width * 0.05))
+                    .font(.system(size: geometry.size.width * 0.05, design: .rounded))
                     .fontWeight(.medium)
                     .foregroundColor(.white)
                 Spacer()
@@ -79,12 +79,12 @@ struct BreathView: View {
                     
                     VStack {
                         Text("How to Practice")
-                            .font(.system(size: geometry.size.width * 0.03))
+                            .font(.system(size: geometry.size.width * 0.03, design: .rounded))
                             .fontWeight(.bold)
                             .foregroundColor(.black)
                         
                         Text("1. Exhale completely through your mouth, making a whoosh sound.\n2. Close your mouth and inhale quietly through your nose to a mental count of four.\n3. Hold your breath for a count of seven.\n4. Exhale completely through your mouth, making a whoosh sound to a count of eight.\n5. This completes one breath. Now inhale again and repeat the cycle three or four times.")
-                            .font(.system(size: geometry.size.width * 0.025))
+                            .font(.system(size: geometry.size.width * 0.025, design: .rounded))
                             .foregroundColor(.black)
                             .lineSpacing(12)
                             .frame(width: geometry.size.width * 0.8, alignment: .leading)
@@ -95,7 +95,7 @@ struct BreathView: View {
                 .frame(width: geometry.size.width, height: 300)
                 .padding(.bottom, 60)
                 Text(breathingText)
-                    .font(.system(size: geometry.size.width * 0.035))
+                    .font(.system(size: geometry.size.width * 0.035, design: .rounded))
                     .fontWeight(.heavy)
                     .padding(.bottom, 60)
                     .foregroundColor(colorBreathing)
@@ -117,7 +117,7 @@ struct BreathView: View {
                         }
                     } else {
                         Text("\((timeStart < 0 ? 0 : timeStart), specifier: "%.0f") Second")
-                            .font(.system(size: geometry.size.width * 0.08))
+                            .font(.system(size: geometry.size.width * 0.08, design: .rounded))
                             .bold()
                             .foregroundColor(colorBreathing)
                     }

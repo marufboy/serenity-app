@@ -123,9 +123,9 @@ struct ChatBubbleView: View {
                             ChatBubbleComp(direction: index % 2 == 0 ? .left : .right) {
                                 Text("\(items[index])")
                                     .padding(.all, 20)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: geometry.size.width * 0.025))
-                                    .background(index % 2 == 0 ? Color.blue : Color.indigo)
+                                    .foregroundColor(index % 2 == 0 ? Color.white : Color.black)
+                                    .font(.system(size: geometry.size.width * 0.025, design: .rounded))
+                                    .background(index % 2 == 0 ? Color.blue : Color.white)
                                 // ... it is appeared, so we can use transition
                             }.id(index)
                                 .transition(index == items.indices.last ? .opacity : .identity)

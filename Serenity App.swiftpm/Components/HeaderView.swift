@@ -26,19 +26,19 @@ struct HeaderView: View {
                         (
                             Text("Hi, Buddies") + Text(Image(systemName: "face.smiling.inverse"))
                         )
-                        .font(.system(size: geometry.size.width * 0.08))
+                        .font(.system(size: geometry.size.width * 0.08, design: .rounded))
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         
                         Text(interactiveSentences[randomIndex])
-                            .font(.system(size: geometry.size.width * 0.05))
+                            .font(.system(size: geometry.size.width * 0.05, design: .rounded))
                             .fontWeight(.light)
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.white)
                         
                         Text("You can answer that later")
-                            .font(.system(size: geometry.size.height * 0.03))
+                            .font(.system(size: geometry.size.height * 0.03, design: .rounded))
                             .fontWeight(.ultraLight)
                             .foregroundColor(.white)
                             .padding(.top, 20)

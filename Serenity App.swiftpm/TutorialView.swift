@@ -18,7 +18,7 @@ struct TutorialView: View {
                 
                 VStack(alignment: .center){
                     Text("Introduction App")
-                        .font(.system(size: geometry.size.width * 0.05))
+                        .font(.system(size: geometry.size.width * 0.05, design: .rounded))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                     ChatBubbleView(onDataReceived: { receivedData in

@@ -58,7 +58,7 @@ struct FlipCardVIew: View {
         GeometryReader{geometry in
             VStack {
                 Text("Tap the Magic Card")
-                    .font(.system(size: geometry.size.width * 0.05))
+                    .font(.system(size: geometry.size.width * 0.05, design: .rounded))
                     .fontWeight(.medium)
                     .foregroundColor(.white)
                 Spacer()
@@ -188,7 +188,7 @@ struct CardFront : View {
             VStack {
                 Spacer()
                 Text("\"\(quote)\"")
-                    .font(.system(size: width * 0.06))
+                    .font(.system(size: width * 0.06, design: .rounded))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .lineSpacing(12)
