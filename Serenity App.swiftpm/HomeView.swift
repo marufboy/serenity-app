@@ -38,47 +38,13 @@ struct HomeView: View {
                     }
                     .tint(Color("SecondaryColor"))
                     .buttonStyle(.borderedProminent)
+                    .padding(.bottom, 20)
                     Spacer()
                 }.frame(width: geometry.size.width, height: geometry.size.height)
             }
         }
     }
 }
-
-//struct HomeMenuView: View{
-//    @Binding var currentView: Int
-//    var geometry : GeometryProxy
-//
-//    var body: some View{
-//        HStack(alignment: .center, spacing: 20){
-//            Button(action: {
-//                withAnimation{
-//                    currentView = 3
-//                }
-//            }) {
-//                Text("Breathing Exercise")
-//                    .font(.title)
-//                    .frame(width: geometry.size.width / 5, height: geometry.size.height / 80)
-//                    .padding()
-//            }
-//            .tint(Color("SecondaryColor"))
-//            .buttonStyle(.borderedProminent)
-//
-//            Button(action: {
-//                withAnimation{
-//                    currentView = 4
-//                }
-//            }) {
-//                Text("Self Talks")
-//                    .font(.title)
-//                    .frame(width: geometry.size.width / 5, height: geometry.size.height / 80)
-//                    .padding()
-//            }
-//            .tint(Color("SecondaryColor"))
-//            .buttonStyle(.borderedProminent)
-//        }
-//    }
-//}
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

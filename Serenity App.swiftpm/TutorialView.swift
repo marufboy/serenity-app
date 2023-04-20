@@ -37,6 +37,7 @@ struct TutorialView: View {
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(Color("SecondaryColor"))
+                        .padding(.bottom, 20)
                         
                     }
                 }.frame(width: geometry.size.width, height: geometry.size.height)

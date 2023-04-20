@@ -30,7 +30,7 @@ struct SwitchStoryView: View {
                             onDataReceived?("affirmations")
                         }
                     
-                    CustomActionButton(title: "Zero To Hero Reflection",subtitle: "Zero to hero with a calm mind. Let's reflect together.", imageName: "wand.and.stars", widthImage: geometry.size.width * 0.8, heightImage: geometry.size.height / 2.5)
+                    CustomActionButton(title: "Zero To Hero Reflection",subtitle: "Let's meditate on a zero-to-hero story to inspire enthusiasm and cultivate calm in our thoughts.", imageName: "wand.and.stars", widthImage: geometry.size.width * 0.8, heightImage: geometry.size.height / 2.5)
                         .onTapGesture {
                             currentView = 5
                             onDataReceived?("stories")

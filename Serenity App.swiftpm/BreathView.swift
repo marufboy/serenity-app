@@ -183,6 +183,7 @@ struct BreathView: View {
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(Color("SecondaryColor"))
+                        .padding(.bottom, 20)
                         .opacity(showButton ? 1 : 0) // Show the button if showButton is true
                         .animation(.easeInOut, value: showButton)
                     }

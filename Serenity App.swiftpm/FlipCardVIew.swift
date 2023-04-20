@@ -95,6 +95,7 @@ struct FlipCardVIew: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(Color("SecondaryColor"))
+                    .padding(.bottom, 20)
                     // Show the button if showButton is true
                     .animation(.easeInOut, value: finished)
                 }
